@@ -1,12 +1,12 @@
 nav{
     background-color: chocolate;
-    color: cornsilk;
+    color: white;
     position: fixed;
     top: 0;
-    left: 30vw;
+    right: 0vw;
     width: 100vw;
     height: 100vh;
-    transition: left .5s ease-in-out;
+    transition: right .5s ease-in-out;
 }
 nav ul{
     list-style-type: none;
@@ -14,25 +14,29 @@ nav ul{
     margin: 0;
 }
 nav a{
-    color: cornsilk;
+    color: white;
     font-size: 1.2em;
     padding: 1em 2em;
     display: block;
     text-decoration: none;
-    border-bottom: 1px solid cornsilk;
+    border-bottom: 1px solid white;
 }
 nav a.actief{
     padding: 1em 1.3em;
-    border-left: .7em solid cornsilk;
-    border-right: .7em solid cornsilk;
+    border-left: .7em solid white;
+    border-right: .7em solid white;
 }
 #menu-schuiver:checked ~ nav{
+    transition: left .5s ease-in-out;
     left: 100vw;
 }
 #menu-schuiver{
     display: none;
 }
 label.haal-menu{
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
     display: block;
+    border-bottom: 2px solid white;
+    text-align: right;
+    font-size: 1.8em;
 }
